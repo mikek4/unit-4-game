@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript"src="assets/javascript/game.js"></script>
+    <link type="text/css" rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+</head>
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Crystal Collector</h1><br>
+          <p class="lead">You will be given a random number at the start of the game. <br>  There are four crystals below. By clicking you will add a specific amount to your total score. <br> You win the game by matching your total score to random number, you lose the game if your total score goes above the random number. <br> The value of each crystal is hidden from you until you click on it. <br>  Each time when the game starts, the game will change the values of each crystal.</p>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="container" style="background-color: lightgray; width: 250px; border: 5px solid gray; text-align:center;">
+                    <div id="targetscore">Target:</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="container" style="background-color: lightgray;width: 250px; border: 5px solid gray; text-align: center;">
+                    <div id="totalscore">New Score:</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div id="standing" style="background-color: lightgray;width: 250px; height: 75px; border: 5px solid gray; text-align: center;">
+                    <div class="container">
+                        <p id="wins">Wins:</p>
+                        <p id="losses">Losses:</p>
+                    </div>
+                </div>
+            </div>    
+        </div> 
+    </div>              
+    
+<br>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div id="crystal1"><img src="assets/images/RedCrystal.jpg" class="rounded float-left" height="150" width="150"></div>
+          </div>
+          <div class="col-md-3">
+            <div id="crystal2"><img src="assets/images/blue-crystal.jpg" class="rounded float-left" height="150" width="150"></div>
+          </div>
+          <div class="col-md-3">
+            <div id="crystal3"><img src="assets/images/yellowcrystal.jpg" class="rounded float-left" height="150" width="150"></div>
+          </div>
+          <div class="col-md-3">
+            <div id="crystal4"><img src="assets/images/greencrystal.jpg" class="rounded float-left" height="150" width="150"></div>
+          </div>
+        </div>
+      </div>
+    
+</body>
+</html>
